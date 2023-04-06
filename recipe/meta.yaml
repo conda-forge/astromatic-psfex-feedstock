@@ -1,5 +1,5 @@
 {% set name = "psfex" %}
-{% set version = "3.21.1" %}
+{% set version = "3.24.1" %}
 
 package:
   name: astromatic-{{ name }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://github.com/astromatic/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: a670f7a7273419a8686c3210b93b184e19649c70f420adc1a0b0c01467b5fe8d
+  sha256: aff89e4bdb9a8392af889f5203279a381532eefcc60a3682824b48c0466dc3d8
   patches:
     - 0001-Search-lapacke-library.patch
 
 build:
   skip: true  # [win]
-  number: 1
+  number: 0
 
 requirements:
   build:
