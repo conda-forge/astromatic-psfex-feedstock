@@ -24,9 +24,10 @@ requirements:
     - make
   host:
     - fftw
-    - liblapacke
+    - openblas
   run:
     - fftw
+    - openblas
 
 test:
   commands:
