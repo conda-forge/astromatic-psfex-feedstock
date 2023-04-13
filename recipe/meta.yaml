@@ -25,9 +25,11 @@ requirements:
   host:
     - fftw
     - openblas
+    - pthread-stubs
   run:
     - fftw
     - openblas
+    - pthread-stubs
 
 test:
   commands:
